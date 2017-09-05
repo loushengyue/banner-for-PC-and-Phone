@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  background-color: #DDDDDD;
+}
+.banner {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+.banner .list {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.banner .list .item {
+  width: 100%;
+  height: 600px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.banner .list .item img {
+  width: 1920px;
+  height: 600px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -300px;
+  margin-left: -960px;
+}
+.banner .prev,
+.banner .next {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 250px;
+  font-size: 80px;
+  color: #FFFFFF;
+  cursor: pointer;
+  text-align: center;
+  line-height: 100px;
+}
+.banner .prev {
+  left: 0;
+}
+.banner .next {
+  right: 0;
+}
+.banner .page {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+.banner .page a {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-color: #0a2b1d;
+  color: #FFFFFF;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+.banner .page a.current {
+  background-color: #00a4e4;
+}
